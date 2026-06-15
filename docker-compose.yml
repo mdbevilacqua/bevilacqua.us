@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    image: bevilacqua-web:latest
+    container_name: bevilacqua
+    dns:
+      - 1.1.1.1      # Cloudflare
+      - 8.8.8.8      # Google fallback
+    ports:
+      - "127.0.0.1:8080:8080"
+    restart: always
+    environment:
+      - FLASK_ENV=production

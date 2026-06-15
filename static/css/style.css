@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: darkblue;
+}
+
+/* Header */
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.header-img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.72);
+}
+
+.header-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(transparent, rgba(0,0,0,6.55));
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  gap: 1.5rem;
+}
+
+.leftcolumn {
+  flex: 3;
+  min-width: 0;
+}
+
+.rightcolumn {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Cards */
+.card {
+  background: gray;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.4rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.10);
+}
+
+.card h2 {
+  margin: 0 0 0.2rem;
+  font-size: 1.3rem;
+  color: darkblue;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card h5 {
+  margin: 0 0 0.8rem;
+  font-size: 0.82rem;
+  color: darkblue;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.card p {
+  line-height: 1.65;
+  margin: 0.6rem 0;
+  color: black;
+}
+
+.card a {
+  color: #2a6fa8;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  margin: 0.4rem 0;
+}
+
+.card ul li {
+  margin-bottom: 0.3rem;
+}
+
+/* Post images */
+.post-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.post-images img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 200px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.card > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.8rem 0;
+  border-radius: 3px;
+}
+
+/* Code blocks */
+pre {
+  margin: 1rem 0;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.82rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.2rem;
+  background: linear-gradient(transparent, gray);
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .header-title h1 {
+    font-size: 1.4rem;
+  }
+}

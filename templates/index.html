@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>www.bevilacqua.us</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://michael.bevilacqua.us/img/LG_PANO_20200517_125110_sm.vr.jpg" alt="Lake Georgetown, TX" class="header-img">
+  <div class="header-title">
+  </div>
+</div>
+
+<div class="row">
+
+  <!-- Main column -->
+  <div class="leftcolumn">
+    {% for post in posts %}
+    <div class="card">
+      <h2>{{ post.title }}</h2>
+      {% if post.date %}
+      <h5>{{ post.date }}</h5>
+      {% endif %}
+
+      {% if post.body %}
+      <p>{{ post.body }}</p>
+      {% endif %}
+
+      {% if post.body_html %}
+      {{ post.body_html | safe }}
+      {% endif %}
+
+      {% if post.images %}
+      <div class="post-images">
+        {% for img in post.images %}
+        <img src="{{ img.src }}" alt="{{ img.alt }}">
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if post.code_blocks %}
+      {% for block in post.code_blocks %}
+      <pre><code class="language-{{ block.lang }}">{{ block.code }}</code></pre>
+      {% endfor %}
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Sidebar -->
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>www.bevilacqua.us</h2>
+    </div>
+    <div class="card">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="https://michael.bevilacqua.us">Resume</a></li>
+        <li><a href="https://www.youtube.com/c/MichaelBevilacqua/playlists">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+    <img src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" alt="Creative Commons License">
+  </a>
+  <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbevilacqua.us%2F">
+    <img src="https://michael.bevilacqua.us/img/I_heart_validator.png" alt="Valid HTML">
+  </a>
+</div>
+
+</body>
+</html>
