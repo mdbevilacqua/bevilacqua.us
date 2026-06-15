@@ -4,6 +4,12 @@ app = Flask(__name__)
 
 POSTS = [
     {
+        "title": "New Python Flask site",
+        "date": "Jun 15, 2026",
+        "body": "Playing this weekend with a my old blog as a Flask app running in Docker and GitHub Actions. Lots more work to do but so far it's been a challenge making this secure publicly visable workflow, migrating the old HTML/JS code to Flask/Jinja and setting up Docker on the Akamai Arch VM.",
+        "images": [],
+    },
+    {
         "title": "Lake Georgetown Goodwater Loop",
         "date": "Sep 25, 2021",
         "body": "The Dragon is still my most challenging local ride. 28 miles in four hours. It's always an accomplishment.",
