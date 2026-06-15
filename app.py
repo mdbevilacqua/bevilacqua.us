@@ -8,9 +8,9 @@ POSTS = [
         "date": "Sep 25, 2021",
         "body": "The Dragon is still my most challenging local ride. 28 miles in four hours. It's always an accomplishment.",
         "images": [
-            {"src": "https://michael.bevilacqua.us/img/LG0.jpg", "alt": "Lake Georgetown"},
-            {"src": "https://michael.bevilacqua.us/img/LG2.jpg", "alt": "Lake Georgetown"},
-            {"src": "https://michael.bevilacqua.us/img/LG1.jpg", "alt": "Lake Georgetown"},
+            {"src": "https://www.bevilacqua.us/img/LG0.jpg", "alt": "Lake Georgetown"},
+            {"src": "https://www.bevilacqua.us/img/LG2.jpg", "alt": "Lake Georgetown"},
+            {"src": "https://www.bevilacqua.us/img/LG1.jpg", "alt": "Lake Georgetown"},
         ],
     },
     {
@@ -18,8 +18,8 @@ POSTS = [
         "date": "Sep 18, 2021",
         "body": None,
         "images": [
-            {"src": "https://michael.bevilacqua.us/img/RPR0.jpg", "alt": "Reveille Peak Ranch"},
-            {"src": "https://michael.bevilacqua.us/img/RPR1.jpg", "alt": "Reveille Peak Ranch"},
+            {"src": "https://www.bevilacqua.us/img/RPR0.jpg", "alt": "Reveille Peak Ranch"},
+            {"src": "https://www.bevilacqua.us/img/RPR1.jpg", "alt": "Reveille Peak Ranch"},
         ],
     },
     {
@@ -27,7 +27,7 @@ POSTS = [
         "date": "Sep 12, 2021",
         "body": None,
         "images": [
-            {"src": "https://michael.bevilacqua.us/img/mlb-9-12-21.jpg", "alt": "Matthew on his first bicycle"},
+            {"src": "https://www.bevilacqua.us/img/mlb-9-12-21.jpg", "alt": "Matthew on his first bicycle"},
         ],
     },
     {
@@ -35,7 +35,7 @@ POSTS = [
         "date": "Sep 11, 2021",
         "body": None,
         "images": [
-            {"src": "https://michael.bevilacqua.us/img/bc-9-21-sm.jpg", "alt": "MTB at Brushy Creek"},
+            {"src": "https://www.bevilacqua.us/img/bc-9-21-sm.jpg", "alt": "MTB at Brushy Creek"},
         ],
     },
     {
@@ -50,11 +50,11 @@ POSTS = [
         "body": None,
         "body_html": (
             "<p>The <a href='https://www.knog.com/product/oi-classic-large/'>Knog Oi</a> bell's design is very slick in that it wraps around the bar.</p>"
-            "<img src='https://michael.bevilacqua.us/img/KnogOiBell-Black.jpg' alt='Knog Oi Bell'>"
+            "<img src='https://www.bevilacqua.us/img/KnogOiBell-Black.jpg' alt='Knog Oi Bell'>"
             "<p>I've found new satisfaction in doing colorings to augment reading in the past year. I think I might even be getting better at it.</p>"
-            "<img src='https://michael.bevilacqua.us/img/PXL_20210120_221333330_sm.jpg' alt='Coloring'>"
+            "<img src='https://www.bevilacqua.us/img/PXL_20210120_221333330_sm.jpg' alt='Coloring'>"
             "<p>Adults are allowed to have fun with their food, too.</p>"
-            "<img src='https://michael.bevilacqua.us/img/PXL_20201211_142935273_sm.jpg' alt='Breakfast'>"
+            "<img src='https://www.bevilacqua.us/img/PXL_20201211_142935273_sm.jpg' alt='Breakfast'>"
         ),
         "images": [],
     },
@@ -65,7 +65,7 @@ POSTS = [
             "<p>Updated the site header. Anything bad I may have ever said about CSS, I take it all back.</p>"
             "<p>Also, I feel <a href='https://validator.w3.org/nu/?doc=https%3A%2F%2Fbevilacqua.us%2F'>validated</a>.</p>"
             "<p>Brushy Creek Park at the YMCA ridge bottom</p>"
-            "<img src='https://michael.bevilacqua.us/img/IMG_20200614_091057_sm.jpg' alt='Brushy Creek, TX'>"
+            "<img src='https://www.bevilacqua.us/img/IMG_20200614_091057_sm.jpg' alt='Brushy Creek, TX'>"
         ),
         "images": [],
     },
@@ -77,7 +77,7 @@ POSTS = [
             "Since installing it last October it has replaced Gnome Terminal and MacOS Terminal which I use daily. "
             "Performance, configuration, customization and documentation are impressive.</p>"
             "<p>Walnut Creek Park</p>"
-            "<img src='https://michael.bevilacqua.us/img/PANO_20200316_165535_sm.vr.jpg' alt='Walnut Creek Park'>"
+            "<img src='https://www.bevilacqua.us/img/PANO_20200316_165535_sm.vr.jpg' alt='Walnut Creek Park'>"
         ),
         "images": [],
     },
