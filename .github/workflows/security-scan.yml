@@ -10,7 +10,7 @@ on:
 
 jobs:
   security:
-    runs-on: ubuntu-latest
+    runs-on: alpine:latest
     permissions:
       contents: read
       security-events: write   # Required to upload results to GitHub Security tab

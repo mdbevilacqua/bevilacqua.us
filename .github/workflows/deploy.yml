@@ -22,6 +22,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "**"
           target: "~/bevilacqua/"
+          exclude: ".git/**,.github/**"
 
       - name: Build and Run Container via SSH
         uses: appleboy/ssh-action@v1.0.3
