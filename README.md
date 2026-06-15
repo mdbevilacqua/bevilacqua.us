@@ -8,7 +8,7 @@ A faithful Flask port of [www.bevilacqua.us](https://www.bevilacqua.us), package
 bevilacqua/
 ├── app.py                  # Flask application & post data
 ├── requirements.txt        # Flask + Gunicorn
-├── Dockerfile              # Two-stage Arch Linux build
+├── Dockerfile              # Alpine Linux build to Arch Linux VM target
 ├── docker-compose.yml      # One-command deploy
 ├── templates/
 │   └── index.html          # Jinja2 template
