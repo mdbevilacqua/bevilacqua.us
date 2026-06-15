@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.SERVER_SSH_KEY }}
 
       - name: Copy Files to Arch Linux VM
         uses: appleboy/scp-action@v0.1.7
