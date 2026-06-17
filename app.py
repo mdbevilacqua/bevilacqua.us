@@ -6,7 +6,7 @@ POSTS = [
     {
         "title": "New Python Flask site",
         "date": "Jun 15, 2026",
-        "body": "A challenge over the weekend converting my old blog to a Flask app running in Docker and GitHub Actions. Lots more work to do but so far it's been fun making this secure and publicly visable, using GitHub workflows, migrating the old HTML/JS code to Flask/Jinja and setting up Docker on the Linode Akamai Arch VM.",
+        "body": "A new challenge over the weekend converting my old blog to a Flask app running in Docker and GitHub Actions. Lots more work to do but so far it's been fun making this secure and publicly visable, using GitHub workflows, migrating the old HTML/JS code to Flask/Jinja and setting up an Alpine Docker on the Linode Akamai Arch VM.",
         "images": [],
     },
     {
@@ -174,11 +174,6 @@ rmmod v4l2loopback""",
 @app.route("/")
 def index():
     return render_template("index.html", posts=POSTS)
-
-@app.route("/get-ip")
-def get_ip():
-    # Returns the direct client IP address
-    return {"ip": request.remote_addr}
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)
