@@ -6,7 +6,7 @@ POSTS = [
     {
         "title": "New Python Flask site",
         "date": "Jun 15, 2026",
-        "body": "A challenge over the weekend converting my old blog to a Flask app running in Docker and GitHub Actions. Lots more work to do but so far it's been fun making this secure and publicly visable, using GitHub workflows, migrating the old HTML/JS code to Flask/Jinja and setting up Docker on the Akamai Arch VM.",
+        "body": "A challenge over the weekend converting my old blog to a Flask app running in Docker and GitHub Actions. Lots more work to do but so far it's been fun making this secure and publicly visable, using GitHub workflows, migrating the old HTML/JS code to Flask/Jinja and setting up Docker on the Linode Akamai Arch VM.",
         "images": [],
     },
     {
